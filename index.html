@@ -16,7 +16,10 @@ html{color-scheme:light}
 body{min-height:100vh;min-height:100dvh;background:#fff;color:#111;font:16px/1.5 'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;-webkit-font-smoothing:antialiased;display:flex;flex-direction:column;align-items:center;padding:clamp(72px,16vh,160px) 24px 56px}
 main{width:100%;max-width:520px}
 h1{font-size:clamp(34px,6vw,48px);font-weight:600;letter-spacing:-.04em;line-height:1.08;animation:rise .9s cubic-bezier(.22,1,.36,1) both}
-ul{list-style:none;margin-top:36px;border-top:1px solid #ececec}
+.by{margin-top:14px;font-size:15px;color:#6e6e73;letter-spacing:-.005em;animation:rise .9s cubic-bezier(.22,1,.36,1) .06s both}
+.by a{color:#111;text-decoration:underline;text-underline-offset:3px;text-decoration-color:#c7c7cc;transition:text-decoration-color .3s}
+.by a:hover{text-decoration-color:#111}
+ul{list-style:none;margin-top:32px;border-top:1px solid #ececec}
 li{border-bottom:1px solid #ececec;animation:rise .9s cubic-bezier(.22,1,.36,1) both;animation-delay:.12s}
 a.proj{display:flex;align-items:center;gap:16px;padding:18px 4px;color:inherit;text-decoration:none;transition:padding .4s cubic-bezier(.22,1,.36,1),background .3s}
 a.proj:hover{padding-left:12px;background:#fafafa}
@@ -30,12 +33,13 @@ footer{margin-top:auto;padding-top:48px;font-size:13px;color:#8e8e93}
 footer a{color:#111;text-decoration:underline;text-underline-offset:3px;text-decoration-color:#c7c7cc;transition:text-decoration-color .3s}
 footer a:hover{text-decoration-color:#111}
 @keyframes rise{from{opacity:0;transform:translateY(14px)}}
-@media (prefers-reduced-motion:reduce){h1,li{animation:none}a.proj,.arr{transition:none}}
+@media (prefers-reduced-motion:reduce){h1,li,.by{animation:none}a.proj,.arr{transition:none}}
 </style>
 </head>
 <body>
 <main>
   <h1>Case Studies</h1>
+  <p class="by">Design e Desenvolvimento por <a href="https://www.linkedin.com/in/lucasgava" target="_blank" rel="noopener">Lucas Gava</a></p>
   <ul id="lista"></ul>
 </main>
 <footer>Fictional projects designed and developed by <a href="https://www.linkedin.com/in/lucasgava" target="_blank" rel="noopener">Lucas Gava</a></footer>
