@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="Case studies: fictional projects designed and developed by Lucas Gava.">
+<meta name="description" content="Case studies designed and developed by Lucas Gava.">
 <meta name="theme-color" content="#ffffff">
 <title>Case Studies</title>
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
@@ -43,12 +43,14 @@ footer a:hover{text-decoration-color:#111}
   <p class="by">Design e Desenvolvimento por <a href="https://www.linkedin.com/in/lucasgava" target="_blank" rel="noopener">Lucas Gava</a></p>
   <ul id="lista"></ul>
 </main>
-<footer>Fictional projects designed and developed by <a href="https://www.linkedin.com/in/lucasgava" target="_blank" rel="noopener">Lucas Gava</a></footer>
+<footer>Nuwa is a fictional project. Thoth is a real product. Both by <a href="https://www.linkedin.com/in/lucasgava" target="_blank" rel="noopener">Lucas Gava</a></footer>
 <script>
 // to add a project, add one more line here
 var PROJETOS = [
   { nome: 'Nuwa', url: '/nuwa/',
-    icone: '<svg viewBox="0 0 26 26" fill="currentColor" aria-hidden="true"><path d="M6.5 3h6l-4.6 20h-6z"/><path d="M15.5 3h6l-4.6 20h-6z"/></svg>' }
+    icone: '<svg viewBox="0 0 26 26" fill="currentColor" aria-hidden="true"><path d="M6.5 3h6l-4.6 20h-6z"/><path d="M15.5 3h6l-4.6 20h-6z"/></svg>' },
+  { nome: 'Thoth', url: 'https://thothdev.com/',
+    icone: '<svg viewBox="0 0 400 240" fill="currentColor" aria-hidden="true" style="width:26px;height:auto"><path d="M0 0H400V222C392 150 310 16 232 16H224A12 12 0 0 0 212 28C212 170 260 240 400 240H0C140 240 188 170 188 28A12 12 0 0 0 176 16H168C90 16 8 150 0 222Z"/></svg>' }
 ];
 var ul = document.getElementById('lista');
 PROJETOS.forEach(function (p, i) {
